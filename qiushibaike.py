@@ -108,7 +108,7 @@ def main():
 
     output = open('qiushibaike.json', 'a')
     pageQuequ = Queue(50)
-    for page in range(startpage, endPage):
+    for page in range(startpage, endPage+1):
         pageQuequ.put(page)
 
     crawlList=[]
